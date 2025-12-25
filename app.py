@@ -25,23 +25,90 @@ st.set_page_config(
 # Custom CSS for "Elite" feel
 st.markdown("""
     <style>
+    /* Global Settings */
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto+Mono:wght@300;400&display=swap');
+    
     .stApp {
-        background-color: #0e1117;
-        color: #fafafa;
+        background-color: #050510;
+        background-image: radial-gradient(#1a1a40 1px, transparent 1px);
+        background-size: 40px 40px;
+        color: #e0e0e0;
+        font-family: 'Roboto Mono', monospace;
     }
+    
+    /* Headers */
+    h1, h2, h3 {
+        font-family: 'Orbitron', sans-serif !important;
+        background: -webkit-linear-gradient(45deg, #00f260, #0575E6);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 0 0 10px rgba(5, 117, 230, 0.3);
+    }
+    
+    /* Sidebar */
+    [data-testid="stSidebar"] {
+        background-color: #0a0a1a;
+        border-right: 1px solid #1f1f3a;
+        box-shadow: 5px 0 15px rgba(0,0,0,0.5);
+    }
+    
+    /* Inputs */
     .stTextInput > div > div > input {
-        background-color: #262730;
-        color: #ffffff;
+        background-color: #111122;
+        color: #00ff9d;
+        border: 1px solid #333366;
+        border-radius: 5px;
+        font-family: 'Roboto Mono', monospace;
     }
+    .stTextInput > div > div > input:focus {
+        border-color: #00ff9d;
+        box-shadow: 0 0 10px rgba(0, 255, 157, 0.2);
+    }
+    
+    /* Buttons */
     .stButton > button {
-        background-color: #4CAF50;
+        background: linear-gradient(90deg, #00f260, #0575E6);
         color: white;
         border-radius: 5px;
         border: none;
         padding: 10px 24px;
+        font-family: 'Orbitron', sans-serif;
+        letter-spacing: 1px;
+        transition: all 0.3s ease;
+        text-transform: uppercase;
+        font-weight: bold;
     }
     .stButton > button:hover {
-        background-color: #45a049;
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(5, 117, 230, 0.6);
+    }
+    
+    /* Chat Messages */
+    .stChatMessage {
+        background-color: rgba(255, 255, 255, 0.05);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    div[data-testid="stChatMessageContent"] p {
+        font-family: 'Roboto Mono', monospace;
+    }
+    
+    /* Scrollbar */
+    ::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #050510; 
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #333366; 
+        border-radius: 5px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #0575E6; 
     }
     </style>
     """, unsafe_allow_html=True)
