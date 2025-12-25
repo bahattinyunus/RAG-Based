@@ -1,6 +1,11 @@
 langchain
+langchain-community
+langchain-openai
+langchain-chroma
 streamlit
 chromadb
 faiss-cpu
 openai
 python-dotenv
+pypdf
+tiktoken

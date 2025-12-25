@@ -1,25 +1,39 @@
-Katkıda Bulunma Rehberi
+# Katkıda Bulunma Rehberi
 
-Teşekkürler — bu proje ile ilgilendiğiniz için minnettarım. Aşağıda katkıda bulunmak isteyen geliştiriciler için temel kurallar ve süreçler yer almaktadır.
+Bu projeye katkıda bulunmak istediğiniz için teşekkür ederiz! Açık kaynak topluluğunun gücüne inanıyor ve katkılarınızı memnuniyetle karşılıyoruz. Aşağıdaki adımları izleyerek projeye destek olabilirsiniz.
 
-1. İletişim
-- Yeni fikirler ya da hata bildirimleri için lütfen önce bir `Issue` açın. Açıklayıcı bir başlık, tekrar üretilebilir adımlar ve beklenen davranışı ekleyin.
+## Nasıl Katkıda Bulunabilirim?
 
-2. Kod Stili
-- Python için PEP8'e uygunluk beklenir. Formatlama için `black` veya `ruff` kullanılması önerilir.
+1.  **Repoyu Forklayın**
+    GitHub sayfasındaki "Fork" butonuna tıklayarak projenin bir kopyasını kendi hesabınıza alın.
 
-3. Branch ve PR Süreci
-- Yeni özellikler veya düzeltmeler için `main` dalından ayrılmış bir branch oluşturun (`feature/`, `fix/` prefix'leri önerilir).
-- Değişiklikleri küçük, mantıklı commit'lere bölün ve her PR için açıklayıcı bir başlık + açıklama ekleyin.
+2.  **Bir Branch Oluşturun**
+    Yapacağınız değişiklik için yeni bir dal (branch) oluşturun.
+    ```bash
+    git checkout -b ozellik/yeni-ozellik-adi
+    ```
 
-4. Testler
-- Mümkün olduğunda test ekleyin veya mevcut testleri güncelleyin. Test altyapısı yoksa basit bir doğrulama adımı açıklayın.
+3.  **Değişikliklerinizi Yapın**
+    Kodunuzu yazın, hataları düzeltin veya belgeleri güncelleyin. Kodun temiz ve anlaşılır olmasına özen gösterin.
 
-5. Lisans ve Telif Hakları
-- Projeye gönderilen kod, depodaki lisans koşulları çerçevesinde kabul edilir. Bu repoda `LICENSE` dosyası bulunmaktadır.
+4.  **Commit Atın**
+    Yaptığınız değişiklikleri açıklayıcı bir mesaj ile kaydedin.
+    ```bash
+    git commit -m "Özellik: Yeni arama algoritması eklendi"
+    ```
 
-6. Güvenlik Açıkları
-- Güvenlik ile ilgili hassas bir konu bildirdiğinizde lütfen doğrudan repo sahibine e-posta veya LinkedIn aracılığıyla ulaşın; halka açık `Issue` yerine öncelikle özel iletişim tercih edilebilir.
+5.  **Değişiklikleri Gönderin (Push)**
+    Branch'inizi kendi fork'unuza gönderin.
+    ```bash
+    git push origin ozellik/yeni-ozellik-adi
+    ```
 
-7. Teşekkür
-- Küçük bir düzeltme veya yazım hatası bile katkı sayılır — teşekkür ederiz.
+6.  **Pull Request (PR) Açın**
+    Orijinal repoya giderek bir "Pull Request" oluşturun. Yaptığınız değişiklikleri detaylı bir şekilde açıklayın.
+
+## Kurallar ve Standartlar
+*   Lütfen kodunuzun mevcut yapıyla uyumlu olduğundan emin olun.
+*   Değişiklikleriniz için test yazmayı unutmayın (uygulanabilirse).
+*   Saygılı ve yapıcı bir dil kullanın.
+
+Katkılarınız için tekrar teşekkürler!
